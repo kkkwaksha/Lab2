@@ -1,0 +1,68 @@
+/* ЗАВДАННЯ 1 */
+
+table {
+  width: 800px;
+}
+
+table,
+th,
+td {
+  border: 3.5px ridge rgb(170, 169, 169);
+  border-collapse: collapse;
+}
+
+td {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+
+table tr:first-child td {
+  background-color: #888f8f;
+  color: #1f1f1f;
+}
+
+table tr:nth-last-child(2) td {
+  background-color: #f5f588;
+  color: #141414;
+}
+
+table tr:first-child:hover td {
+  background-color: #1f1f1f;
+  color: #888f8f;
+}
+
+table tr:nth-last-child(2):hover td {
+  background-color: #141414;
+  color: #f5f588;
+}
+
+/* ЗАВДАННЯ 2 */
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 5px double black;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.square.orange {
+  background-color: #f1b584;
+}
+
+.square.red {
+  background-color: rgba(189, 118, 118, 0.736);
+}
+
+.square.red.pos {
+  margin-right: 80px;
+  position: relative;
+  top: 54.4px;
+  left: -59.4px;
+}
+
+.square.red.trans {
+  transform: translate(-59.4px, 54.4px);
+}
